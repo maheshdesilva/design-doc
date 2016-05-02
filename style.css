@@ -1,0 +1,129 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    line-height: 1;
+    font-family: 'Avenir', Arial, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(#fff, #eee);
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 2.3;
+    padding: 0 15px;
+}
+
+.button--google-btn {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.button--google-btn:before {
+    content: "";
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+.button--sign-in {
+    background: linear-gradient(#6db460, #409d2f);
+    border-color: #1e8c0a;
+    color: white;
+}
+
+.sign-in {
+    background: white;
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px 30px 30px;
+    margin: 40px auto 30px auto;
+    border-radius: 5px;
+    position: relative;
+    top: 25%;
+}
+
+.sign-in::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.sign-in--dark {
+    background: #bbb;
+    color: white;
+}
+
+.sign-in__title {
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.sign-in__title--lite {
+    font-weight: 100;
+    display: block;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+.sign-in__break {
+    display: block;
+    text-align: center;
+    margin: 30px -30px;
+    border-bottom: 1px solid #ddd;
+    line-height: 0;
+}
+
+.sign-in__break--title {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #a2a2a2;
+}
+
+.sign-in__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 3px 8px 0 8px;
+    line-height: 2.2;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.sign-in__forget-link {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    color: #a2a2a2;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__link {
+    font-size: 12px;
+    text-decoration: none;
+    color: #a2a2a2;
+    margin: 0 10px;
+}
